@@ -1,0 +1,30 @@
+Napisati program koji predstavlja bazu podataka računa jedne porodice. Svaki račun je
+opisan preko sledećih polja:
+Broj
+(broj računa, koristiti celobrojni tip).
+Primalac
+(ime ustanove kojoj se račun plaća).
+Uplatilac
+(ime i prezime uplatioca računa).
+Iznos
+(iznos koji je potrebno uplatiti).
+Indikator
+(indikator da li je račun plaćen ili nije).
+Za skladištenje podataka koristiti listu i omogućiti sledeće operacije nad podacima u
+bazi:
+1. Dodavanje novog računa.
+2. Plaćanje postojećeg računa.
+3. Bris
+anje računa sa određenim brojem računa.
+4. Prikaz podataka
+računa sa unetim nazivom primaoca.
+5. Prikaz svih računa koji nisu plaćeni.
+6. Prikaz svih računa u bazi.
+7. Brisanje svih računa u bazi.
+8. Izlaz iz programa.
+Neophodno je implementirati sledeć
+u funkcionalnost. Kada se program pokrene korisnik se
+pita da li želi da popuni bazu sa test podacima. Ukoliko korisnik kaže da želi, lista se
+automatski popunjava sa 5 računa, nakon toga se korisniku omogućava dalji rad. Ukoliko
+korisnik kaže da ne želi da lista bude popunjena test podacima, omogućava mu se rad sa
+praznom listom. Ovo pitanje se postavlja korisniku i nakon brisanja svih knjiga iz baze.

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1585332323 source:c:\users\gsubi\dropbox\cpp\panonit\vezbezadaci\dan08\dayo8-slidestaskslists\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1590759884 source:c:\users\gsubi\dropbox\obuka\panonit\vezbezadaci\dan08 - malloc - list\dayo8-slidestaskslists\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

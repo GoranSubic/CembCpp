@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1587061153 source:c:\users\gsubi\dropbox\cpp\panonit\vezbezadaci\dan09\day09-application\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1596712560 source:c:\users\gsubi\dropbox\obuka\panonit\vezbezadaci\dan09\day09-application\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

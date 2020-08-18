@@ -1,0 +1,5 @@
+USING INTERRUPTS 8051 MICROCONTROLLER. 
+Interrupts are used for communication between the microcontroller and the external device.
+
+8051 microcontroller Interrupt Service
+A fixed memory area is assigned for each interrupt inside the microcontroller. The Interrupt Vector Table contains the starting address of the memory location of every interrupt. When an interrupt occurs, the controller transfers the content of the program counter onto the stack. Then it jumps to the memory location which is specified by Interrupt Vector Table (IVT). The code written on that memory area by the programmer starts its execution. That code is called Interrupt Service Routine (ISR) or interrupt handler.
