@@ -1,0 +1,93 @@
+﻿  Graph.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.cpp(64,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.cpp(130,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=double
+          ]
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.cpp(131,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=double
+          ]
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.cpp(396,24): warning C4018: '>=': signed/unsigned mismatch
+  GUI.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(107,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(112,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(117,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130,1): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130): message : while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(97): message : see reference to function template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)' being compiled
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(99): message : see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+  Simple_window.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Simple_window.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(107,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(112,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(117,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130,1): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130): message : while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(97): message : see reference to function template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)' being compiled
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(99): message : see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+  Window.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Window.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(107,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(112,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(117,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Window.cpp(74,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Window.cpp(76,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130,1): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130): message : while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(97): message : see reference to function template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)' being compiled
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(99): message : see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+  main.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\main.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(107,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(112,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(117,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130,1): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130): message : while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(97): message : see reference to function template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)' being compiled
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(99): message : see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+  MyWindow.cpp
+C:\Users\gsubi\workspaces\source\repos\C++Basic\fltk-1.3.5-source\fltk-1.3.5\FL\x.H(28,1): warning C4005: 'WIN32': macro redefinition
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\MyWindow.cpp : message : see previous definition of 'WIN32'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,26): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(45,46): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,19): warning C4305: 'initializing': truncation from 'Graph_lib::Color::Transparency' to 'char'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(47,39): warning C4309: 'initializing': truncation of constant value
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(107,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(112,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(117,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130,1): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\Graph.h(130): message : while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(97): message : see reference to function template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)' being compiled
+C:\Users\gsubi\workspaces\source\repos\C++Basic\C++BasicsDay04-SimpleGUI\graph_lib\GUI.h(99): message : see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+  Generating Code...
+  C++BasicsDay04-SimpleGUI.vcxproj -> C:\Users\gsubi\workspaces\source\repos\C++Basic\Debug\C++BasicsDay04-SimpleGUI.exe
