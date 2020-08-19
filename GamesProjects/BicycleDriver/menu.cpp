@@ -1,5 +1,6 @@
 #include "menu.h"
 #include <SDL.h>
+#include "init.h"
 #include "surface.h"
 #include "variable.h"
 #include "process.h"
@@ -45,8 +46,12 @@ int start_menu()
             {
                 x = event.motion.x;
                 y = event.motion.y;
-                if ((x > 594) && (x < 756) && (y > 340) && (y < 357))
+                if ((x > 594) && (x < 756) && (y > 340) && (y < 357))   //start game
                 {
+
+                    if (game_on == 0 || time_gap > 0)       // play again if game was started once already
+                        if (!init_restart()) return 0;
+
                     while (bk.process())
                     {
                         //SDL_Flip(screen);

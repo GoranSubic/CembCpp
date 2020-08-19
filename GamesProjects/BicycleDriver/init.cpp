@@ -112,6 +112,28 @@ bool load_files()
     return true;
 }
 
+bool init_restart() 
+{
+    for (int i = 0; i < SMAX_WALL; i++)
+        w1[i].set_state(false);              //add the wall's state
+    for (int i = 0; i < BMAX_WALL; i++)
+        w2[i].set_state(false);              //add the wall's state
+
+    keybstate = SDL_GetKeyboardState(NULL);
+    if (SDL_Init(SDL_INIT_TIMER) == -1)
+        return false;
+    speed = 0;
+    bike_x = START_BIKE_X;
+    game_on = 1;
+    time_gap = 0;
+    start_time = SDL_GetTicks();
+
+    if (!load_files())
+        return false;
+
+    return true;
+}
+
 bool test_imgonscr()
 {
     //SDL_Renderer* renderer = SDL_CreateRenderer(screen, -1, 0);

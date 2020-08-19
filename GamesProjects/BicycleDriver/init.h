@@ -17,6 +17,8 @@ SDL_Surface* load_image(const char*, int col1, int col2, int col3);
 
 bool load_files();
 
+bool init_restart();
+
 bool test_imgonscr();
 
 #endif
