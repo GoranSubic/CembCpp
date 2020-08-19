@@ -16,7 +16,7 @@ int start_menu()
         {
             if (event.type == SDL_MOUSEMOTION)
             {
-                //std::cerr << "inside" << std::endl;
+                //cerr << "inside" << endl;
                 x = event.motion.x;
                 y = event.motion.y;
                 if ((x > 594) && (x < 756) && (y > 340) && (y < 357))
@@ -50,9 +50,7 @@ int start_menu()
                     while (bk.process())
                     {
                         //SDL_Flip(screen);
-
                         SDL_RenderPresent(renderer);
-
                         SDL_RenderClear(renderer);
                     }
                 }

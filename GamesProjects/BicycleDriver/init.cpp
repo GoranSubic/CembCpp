@@ -16,9 +16,6 @@ bool init_all()
         WIDTH, HEIGHT,
         SDL_SWSURFACE);
 
-
-    renderer = SDL_CreateRenderer(screen, -1, 0);
-
     if (screen == NULL)
     {
         return false;
@@ -28,6 +25,8 @@ bool init_all()
     {
         return false;
     }
+
+    renderer = SDL_CreateRenderer(screen, -1, 0);
 
     return true;
 }

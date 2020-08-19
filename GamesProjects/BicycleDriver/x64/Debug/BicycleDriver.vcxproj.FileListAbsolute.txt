@@ -1,4 +1,2 @@
 C:\Users\gsubi\Documents\GamesProjects\BicycleDriver\x64\Debug\BicycleDriver.exe
 C:\Users\gsubi\Documents\GamesProjects\BicycleDriver\x64\Debug\BicycleDriver.pdb
-C:\Users\gsubi\Documents\CembCpp\GamesProjects\BicycleDriver\x64\Debug\BicycleDriver.exe
-C:\Users\gsubi\Documents\CembCpp\GamesProjects\BicycleDriver\x64\Debug\BicycleDriver.pdb

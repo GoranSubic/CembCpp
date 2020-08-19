@@ -1,5 +1,3 @@
-//#include <SDL.h>
-//#include "coordinates.h"
 #include <SDL_ttf.h>
 #include "constants.h"
 #include "coordinates.h"
@@ -26,7 +24,6 @@ SDL_Surface* times = NULL;
 SDL_Surface* time_limit = NULL;
 SDL_Surface* die = NULL;
 
-
 SDL_Color textColor = { 225,0,0 };
 SDL_Event event;                             //For checking the event happen...
 //Uint8* keystate = SDL_GetKeyState(NULL);       //for check key event keys..
@@ -41,11 +38,11 @@ int end_time;
 int time_gap;
 
 int speed;
+int angle = 0;
+int angle_count = 0;
 
 int jump_state = 0;
 int max_limit = 200;
-
-
 
 //variable for bike..
 int bike_stand = LAYER_Y;
