@@ -1,4 +1,10 @@
-#pragma once
+/**
+ *  Process header file - documenting code
+ *
+ */
+
+#ifndef BIKES_PROCESS_H
+#define BIKES_PROCESS_H
 
 class bike_process {
 public:
@@ -6,3 +12,5 @@ public:
 	void change_coardinate(int);
 	bool process();
 };
+
+#endif

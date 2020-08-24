@@ -1,3 +1,8 @@
+/**
+ *  Process cpp - documenting code
+ *
+ */
+
 #include "process.h"
 #include "collision.h"
 #include "variable.h"

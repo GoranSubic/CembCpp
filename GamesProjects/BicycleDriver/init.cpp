@@ -1,3 +1,8 @@
+/**
+ *  Init cpp - documenting code
+ *
+ */
+
 #include "init.h"
 #include "variable.h"
 #include "constants.h"
@@ -9,7 +14,7 @@ bool init_all()
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
         return false;
 
-    //screen = SDL_SetVideoMode(WIDTH, HEIGHT, BPP, SDL_SWSURFACE);
+    //screen = SDL_SetVideoMode(WIDTH, HEIGHT, BPP, SDL_SWSURFACE); used with SDL1
     screen = SDL_CreateWindow("My Game Window",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,

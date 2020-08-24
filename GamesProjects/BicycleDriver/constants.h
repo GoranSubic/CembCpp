@@ -1,6 +1,10 @@
-#ifndef BIKES_Constants
-#define BIKES_Constants
-//Constants for height and width of the screen ..
+/**
+ *	Constants for height and width of the screen ..
+ */
+
+#ifndef BIKES_CONSTANTS_H
+#define BIKES_CONSTANTS_H
+
 const int WIDTH = 800;
 const int HEIGHT = 600;
 const int BPP = 32;

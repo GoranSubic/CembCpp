@@ -1,9 +1,14 @@
+/**
+ *  Variable header file - documenting code
+ *
+ */
+
+#ifndef BIKES_VARS_H
+#define BIKES_VARS_H
+
 #include <SDL_ttf.h>
 #include "constants.h"
 #include "coordinates.h"
-
-#ifndef BIKES_Vars
-#define BIKES_Vars
 
 SDL_Window* screen = NULL;
 SDL_Renderer* renderer = NULL;
@@ -55,4 +60,4 @@ wall w2[BMAX_WALL];
 //Game states..
 int game_on = 1;
 
-#endif // !BIKES_Vars
+#endif // BIKES_VARS_H

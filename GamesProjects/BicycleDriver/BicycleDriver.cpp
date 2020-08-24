@@ -1,3 +1,8 @@
+/**
+ *  Main function cpp - documenting code
+ *
+ */
+
 #include "init.h"
 #include "menu.h"
 

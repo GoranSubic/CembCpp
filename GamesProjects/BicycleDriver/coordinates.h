@@ -1,21 +1,51 @@
-#include <SDL.h>
+/**
+ *  Coordinates header file - documenting code
+ *
+ */
 
-#ifndef BIKES_Coords
-#define BIKES_Coords
+#ifndef BIKES_COORDS_H
+#define BIKES_COORDS_H
+
+#include <SDL.h>
 
 class cord{
 protected:
     SDL_Rect cord_rect;
 public:
+    cord();
     cord(int x, int y, int w, int h);
-    int get_cord_x();              //Returns the current x coardinate of the object...
-    int get_cord_y();              //Returns the current y coardinate of the object...
-    int get_cord_w();
-    int get_cord_h();
-    SDL_Rect get_rect();    //Returns rectangle and take width of the picture as a argument..
-                            //Sets the width and the height of the current picture..
 
-};          //Holds the coardinates of the images
+    /// <summary>
+    /// Returns the current x coardinate of the object...
+    /// </summary>
+    /// <returns>X coordinate of object</returns>
+    int get_cord_x();              //Returns the current x coardinate of the object...
+
+    /// <summary>
+    /// Returns the current y coardinate of the object...
+    /// </summary>
+    /// <returns>Y coordinate of object</returns>
+    int get_cord_y();              //Returns the current y coardinate of the object...
+
+    /// <summary>
+    /// Returns the current y coardinate of the object...
+    /// </summary>
+    /// <returns>Z coordinate of object</returns>
+    int get_cord_w();
+
+    /// <summary>
+    /// Returns the current H coardinate of the object...
+    /// </summary>
+    /// <returns>H coordinate of object</returns>
+    int get_cord_h();
+
+    /// <summary>
+    /// Coordinates of rectangle
+    /// </summary>
+    /// <returns>Object of rectangles type</returns>
+    SDL_Rect get_rect();
+
+};          //Holds the coordinates of the images
 
 class background:public cord
 {

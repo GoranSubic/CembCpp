@@ -1,3 +1,8 @@
+/**
+ *  Surface cpp - documenting code
+ *
+ */
+
 #include "surface.h"
 #include "constants.h"
 #include "variable.h"

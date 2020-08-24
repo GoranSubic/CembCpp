@@ -1,3 +1,8 @@
+/**
+ *  Menu cpp - documenting code
+ *
+ */
+
 #include "menu.h"
 #include <SDL.h>
 #include "init.h"

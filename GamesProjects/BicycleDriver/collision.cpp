@@ -1,3 +1,8 @@
+/**
+ *  Collision cpp - documenting code
+ *
+ */
+
 #include "collision.h"
 #include "surface.h"
 #include "variable.h"
@@ -33,7 +38,6 @@ bool is_collision()
     return false;
 }
 
-//Detect collision when moving RIGHT side...
 bool check_collision_wall(SDL_Rect source, SDL_Rect dest)
 {
     if (((source.x + source.w) < dest.x) or source.x > (dest.x + dest.w))

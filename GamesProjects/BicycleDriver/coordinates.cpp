@@ -1,7 +1,20 @@
+/**
+ *  Coordinates cpp - documenting code
+ *
+ */
+
 #include "coordinates.h"
 #include "constants.h"
 
-cord::cord(int x = 0, int y = 0, int w = 0, int h = 0)
+cord::cord()
+{
+    cord_rect.x = 0;
+    cord_rect.y = 0;
+    cord_rect.w = 0;
+    cord_rect.h = 0;
+}
+
+cord::cord(int x, int y, int w, int h)
 {
     cord_rect.x = x;
     cord_rect.y = y;
@@ -13,18 +26,22 @@ int cord::get_cord_x()              //Returns the current x coardinate of the ob
 {
     return cord_rect.x;
 }
+
 int cord::get_cord_y()              //Returns the current y coardinate of the object...
 {
     return cord_rect.y;
 }
+
 int cord::get_cord_w()
 {
     return cord_rect.w;
 }
+
 int cord::get_cord_h()
 {
     return cord_rect.h;
 }
+
 SDL_Rect cord::get_rect()
 {
     return cord_rect;

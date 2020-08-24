@@ -1,0 +1,14 @@
+constexpr - za pointere i variable proveriti da li mogu da se deklarišu ovako
+https://stackoverflow.com/questions/7806589/c-is-it-possible-to-delay-initialization-of-constant-static-member
+design pattern subscribe publish C++
+http://www.cs.sjsu.edu/faculty/pearce/modules/patterns/events/pubsubimp.htm
+
+
+pomoću clang implementirati doxygen
+- pridržavati se jednog code style
+
+povezati bazu (? mysql) sa score 
+(na kraju ili na početku igre pitati za ime, ako već postoji ime proveriti, 
+ako je potvrđeno setovati rezultat ako je veći...)
+
+Instructions - implementirati
