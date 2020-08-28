@@ -28,6 +28,33 @@ void rotate_surface(int x, int y, int w, int h, SDL_Surface* source, int angle)
     return;
 }
 
+void apply_surface_bckgr(int x, int y, int w, int h, SDL_Surface* source, SDL_Renderer* dest, const char* type_srf)
+{
+    SDL_Rect offset;
+    offset.x = x;
+    offset.y = y;
+    offset.w = w;
+    offset.h = h;
+    //SDL_BlitSurface(source, clip, dest, &offset);
+    SDL_Texture* texture_source = SDL_CreateTextureFromSurface(dest, source);
+    if (texture_source == NULL) {
+        fprintf(stderr, "CreateTextureFromSurface failed: %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_RenderFillRect(renderer, &offset);
+
+    SDL_SetTextureColorMod(texture_source, 0, 0, 0);
+    SDL_SetTextureAlphaMod(texture_source, 255);
+    /* render the current animation step of our shape */
+    //SDL_RenderCopy(Main_Renderer, BlueShapes, &SrcR, &DestR);
+    SDL_RenderCopy(dest, texture_source, NULL, &offset);
+    SDL_DestroyTexture(texture_source);
+
+    return;
+}
+
 void apply_surface(int x, int y, int w, int h, SDL_Surface* source, SDL_Renderer* dest, SDL_Rect* clip)
 {
     SDL_Rect offset;

@@ -1,0 +1,8 @@
+  * To start the game click on New Game
+  * Instructions - this window
+        On top of this window are best results
+        After results is this manual :)
+  * Exit - Click on Exit
+ 
+  Thanks,
+  Bye :)

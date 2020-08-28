@@ -7,8 +7,12 @@
 #define BIKES_VARS_H
 
 #include <SDL_ttf.h>
+#include <string>
+#include "dbconnection.h"
 #include "constants.h"
 #include "coordinates.h"
+
+StorageData* store_data = NULL;
 
 SDL_Window* screen = NULL;
 SDL_Renderer* renderer = NULL;
@@ -24,6 +28,18 @@ SDL_Surface* instruction_menu = NULL;
 SDL_Surface* quit_menu = NULL;
 
 TTF_Font* font = NULL;
+TTF_Font* font_introduct = NULL;
+
+std::string input_name = "No Name";
+std::string names_list = "Empty List";
+std::string instruct_list = "Empty List";
+SDL_Surface* input_name_times = NULL;
+SDL_Surface* names_list_times = NULL;
+SDL_Surface* instruct_times = NULL;
+SDL_Surface* users_nick_name = NULL;
+SDL_Surface* achieved_score = NULL;
+SDL_Surface* score_times = NULL;
+int score = 1;
 
 SDL_Surface* times = NULL;
 SDL_Surface* time_limit = NULL;

@@ -21,6 +21,8 @@
  /// <param name="angle">Angle - step to rotate on each iteration...</param>
 void rotate_surface(int x, int y, int w, int h, SDL_Surface* source, int angle);
 
+void apply_surface_bckgr(int x, int y, int w, int h, SDL_Surface* source, SDL_Renderer* dest, const char* type_srf);
+
 /// <summary>
 /// For every Surface create Texture and then render it...
 /// </summary>

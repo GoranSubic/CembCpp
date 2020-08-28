@@ -5,6 +5,12 @@
 #ifndef BIKES_CONSTANTS_H
 #define BIKES_CONSTANTS_H
 
+/// <summary>
+/// 0 - save data to txt file;
+/// 1 - save data to database;
+/// </summary>
+const int SAVE_DATA_TO = 1; 
+
 const int WIDTH = 800;
 const int HEIGHT = 600;
 const int BPP = 32;

@@ -103,9 +103,12 @@ bool load_files()
     w2[3] = wall(WIDTH + 7800, LAYER_Y - obs_wall[1]->h, obs_wall[1]->w, obs_wall[1]->h);
 
     font = TTF_OpenFont("times.ttf", 20);      //Font file is loaded....
+    font_introduct = TTF_OpenFont("times.ttf", 12);      //Font file is loaded....
 
     time_limit = TTF_RenderText_Solid(font, "Time limit is 1:30 minute", textColor);
     die = TTF_RenderText_Solid(font, "GAME OVER", textColor);
+    users_nick_name = TTF_RenderText_Solid(font, "Nick name: ", textColor);
+    achieved_score = TTF_RenderText_Solid(font, "Achieved score: ", textColor);
 
     menu_pic = load_image("image/menu.jpg");
     play_menu = load_image("image/menu_play.jpg");
@@ -132,6 +135,7 @@ bool init_restart()
     game_on = 1;
     time_gap = 0;
     start_time = SDL_GetTicks();
+    score = 0;
 
     if (!load_files())
         return false;

@@ -1,0 +1,18 @@
+SELECT * FROM `users` ORDER BY score DESC LIMIT 10;
+
+#CREATE TABLE `users` (
+#    id int NOT NULL AUTO_INCREMENT,
+#    nickname varchar(10) NOT NULL,
+#    score int,
+#    PRIMARY KEY (id)
+#);
+
+#DROP table `users`;
+
+#ALTER TABLE users MODIFY nickname VARCHAR(10) NOT NULL unique;
+
+#INSERT INTO `users` ( nickname, score ) VALUES ( "Neko1", 1 );
+
+#SELECT EXISTS(SELECT * from `users` WHERE nickname="Neko11");
+
+#INSERT INTO `users` ( nickname, score ) VALUES ( 'Check Name', 5 );

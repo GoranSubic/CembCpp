@@ -30,6 +30,7 @@ void bike_process::load_layer(int x, int y)
     }
     else
     {
+        if (angle == 330) score++;
         angle -= 30;
         rotate_surface(bike_x, bike_y, bike->w, bike->h, bike, angle);
     }
@@ -114,6 +115,7 @@ bool bike_process::process()
     load_layer();
     if ((w2[BMAX_WALL - 1].get_cord_x()) + w2[BMAX_WALL - 1].get_cord_w() < 0)
     {
+        score += 10;
         apply_surface(100, 300, die->w, die->h, die, renderer);
         SDL_RenderPresent(renderer);
         SDL_Delay(2000);
@@ -130,5 +132,21 @@ bool bike_process::process()
     apply_surface(600, 50, times->w, times->h, times, renderer);
     apply_surface(500, 55 + times->h, time_limit->w, time_limit->h, time_limit, renderer);
 
+    apply_surface(100, 50, times->w, times->h, users_nick_name, renderer);
+    apply_surface(200, 50, times->w, times->h, input_name_times, renderer);
+
+    apply_surface(100, 100, times->w, times->h, achieved_score, renderer);
+    string sscore = to_string(score);
+    score_times = TTF_RenderText_Solid(font, sscore.c_str(), textColor);
+    apply_surface(200, 100, times->w, times->h, score_times, renderer);
+
     return true;
+}
+
+
+
+
+void change_users_scoressss(int sc = 0)
+{
+    score += sc;
 }
