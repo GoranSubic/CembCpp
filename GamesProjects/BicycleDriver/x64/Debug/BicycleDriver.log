@@ -1,1 +1,1110 @@
-﻿
+﻿  In file included from dbconnection.cpp:3:
+./dbconnection.h(66,14): warning : private field 'server' is not used [-Wunused-private-field]
+./dbconnection.h(71,14): warning : private field 'my_unix_socet' is not used [-Wunused-private-field]
+./dbconnection.h(72,16): warning : private field 'clientflag' is not used [-Wunused-private-field]
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\collision.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\dbconnection.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\init.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\menu.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\process.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> input_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> names_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> instruct_list
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: unsigned char const *keybstate
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class background *bg
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class wall *w1
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class wall *w2
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Renderer *renderer
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *bike
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class soci::session *sql
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: class StorageData *store_data
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Window *screen
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Rect *scr_rect
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **back
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *upback
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface **obs_wall
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *menu_pic
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *play_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruction_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *quit_menu
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct _TTF_Font *font_introduct
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *input_name_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *names_list_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *instruct_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *users_nick_name
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *achieved_score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *score_times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int score
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *times
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *time_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Surface *die
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: struct SDL_Color textColor
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: union SDL_Event event
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int start_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int end_time
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int time_gap
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int speed
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int angle
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int angle_count
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int jump_state
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int max_limit
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int bike_stand
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int bike_x
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int bike_y
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : duplicate symbol: int game_on
+  >>> defined at x64\Debug\BicycleDriver.obj
+  >>> defined at x64\Debug\surface.obj
+  
+lld-link : warning : found both wmain and main; using latter
+  BicycleDriver.vcxproj -> C:\Users\gsubi\Documents\CembCpp\GamesProjects\BicycleDriver\x64\Debug\BicycleDriver.exe
