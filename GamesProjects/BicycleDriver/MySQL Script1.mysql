@@ -1,5 +1,10 @@
 SELECT * FROM `player` ORDER BY score DESC LIMIT 10;
 
+#DELETE from `users` where id=11;
+
+#select last_insert_id() from `users`;
+#SELECT COALESCE(MAX(id), 0) + 1 FROM `users`;
+
 #CREATE TABLE `player` (
 #    id int NOT NULL AUTO_INCREMENT,
 #    nickname varchar(10) NOT NULL,
@@ -7,7 +12,7 @@ SELECT * FROM `player` ORDER BY score DESC LIMIT 10;
 #    PRIMARY KEY (id)
 #);
 
-#DROP table `users`;
+#DROP table `player`;
 
 #ALTER TABLE users MODIFY nickname VARCHAR(10) NOT NULL unique;
 
