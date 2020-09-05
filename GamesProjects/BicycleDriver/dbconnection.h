@@ -1,10 +1,11 @@
 #ifndef BIKES_DBCONNECTION_H
 #define BIKES_DBCONNECTION_H
 
+#include "constants.h"
 #include <mysql.h>
 #include <map>
 #include <string>
-#include "constants.h"
+#include <iostream>
 
 using namespace std;
 
@@ -12,7 +13,9 @@ class StorageData {
 protected:
 	StorageData() {};
 public:
-	virtual ~StorageData() {};
+	virtual ~StorageData() {
+		cout << "Destructor ~StorageData()!!!!!! " << endl;
+	};
 
 	/// <summary>
 	/// Initialize storage for data:

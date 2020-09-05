@@ -38,7 +38,7 @@ DbConnection::DbConnection()
 DbConnection::~DbConnection()
 {
     (*sql).close();
-    std::cout << "Destructor!!!!!! " << endl;
+    std::cout << "Destructor ~DbConnection()!!!!!! " << endl;
 }
 
 StorageData* StorageData::init_data_storage()
@@ -115,7 +115,7 @@ bool DbConnection::write_score()
 bool DbConnection::check_player_exists()
 {
     int check = 0;
-    int entry;
+    int entry = 0;
 
     try {
         soci::statement st = ((*sql).prepare << "SELECT EXISTS(SELECT * from `player` WHERE nickname='" + input_name + "');", 
@@ -123,9 +123,7 @@ bool DbConnection::check_player_exists()
         st.execute();
 
         if (st.fetch())
-        {
             check = entry;
-        }
     }
     catch (soci::mysql_soci_error const& e)
     {
@@ -140,7 +138,7 @@ bool DbConnection::check_player_exists()
     }
 
     //puts("check_player_exists - Successful connection to database!");
-    return check;
+    return (check == 0) ? false : true;
 }
 
 /// <summary>

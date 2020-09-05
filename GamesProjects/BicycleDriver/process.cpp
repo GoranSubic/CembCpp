@@ -30,7 +30,7 @@ void bike_process::load_layer(int x, int y)
     }
     else
     {
-        if (angle == 330) score++;
+        if (angle == 330) change_users_score(1);
         angle -= 30;
         rotate_surface(bike_x, bike_y, bike->w, bike->h, bike, angle);
     }
@@ -76,7 +76,7 @@ bool bike_process::process()
     }
     if (keybstate[SDL_SCANCODE_UP])                //If UP is pressed...
     {
-        if (jump_state > 10) {
+        if (jump_state > 10 && angle == 0 && angle_count < 3) {
             angle_count++;
             angle = 330;
 
@@ -96,6 +96,8 @@ bool bike_process::process()
     {
         bike_y = bike_stand - bike->h;
         jump_state = 0;
+
+        angle_count = 0;
     }
 
     if (keybstate[SDL_SCANCODE_RIGHT])
@@ -115,7 +117,7 @@ bool bike_process::process()
     load_layer();
     if ((w2[BMAX_WALL - 1].get_cord_x()) + w2[BMAX_WALL - 1].get_cord_w() < 0)
     {
-        score += 10;
+        change_users_score(10);
         apply_surface(100, 300, die->w, die->h, die, renderer);
         SDL_RenderPresent(renderer);
         SDL_Delay(2000);
@@ -143,10 +145,7 @@ bool bike_process::process()
     return true;
 }
 
-
-
-
-void change_users_scoressss(int sc = 0)
+void bike_process::change_users_score(int sc = 0)
 {
     score += sc;
 }
