@@ -1,6 +1,6 @@
-SELECT * FROM `users` ORDER BY score DESC LIMIT 10;
+SELECT * FROM `player` ORDER BY score DESC LIMIT 10;
 
-#CREATE TABLE `users` (
+#CREATE TABLE `player` (
 #    id int NOT NULL AUTO_INCREMENT,
 #    nickname varchar(10) NOT NULL,
 #    score int,

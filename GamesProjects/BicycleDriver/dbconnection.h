@@ -26,7 +26,7 @@ public:
 	virtual bool check_players_score() = 0;
 	virtual bool create_new_score() = 0;
 	virtual bool update_score() = 0;
-	multimap<string, string> users_map;
+	multimap<int, string> users_map;
 };
 
 class FileConnection : public StorageData {
@@ -44,9 +44,7 @@ public:
 class DbConnection : public StorageData {
 public:
 	DbConnection();
-	~DbConnection() {
-		mysql_close(conn);       // Once only
-	};
+	~DbConnection();
 
 	/// <summary>
 	/// List registered users
@@ -65,15 +63,10 @@ public:
 	bool create_new_score() override;
 	bool update_score() override;
 private:
-	int qstate;
-	MYSQL* conn;
-	MYSQL_ROW row;
-	MYSQL_RES* res;
-
 	const char* server = "localhost";
 	const char* my_user = "root";
 	const char* pass = "Passw0rd";
-	const char* dbname = "bicycler";
+	const string dbname = "bicycler";
 	const int port = 3306;
 	const char* my_unix_socet = NULL;
 	unsigned long clientflag = 0;

@@ -127,7 +127,7 @@ void users_scores()
         {
             names_list.clear();
             cout << "MENU - Users from map: " << endl;
-            std::multimap<string, string>::reverse_iterator itermap;
+            std::multimap<int, string>::reverse_iterator itermap;
             int n = 1;
             names_list.append("\n");
             names_list.append("Best scores: \n");
@@ -136,13 +136,15 @@ void users_scores()
                 itermap != store_data->users_map.rend();
                 ++itermap)
             {
+                string fst_str;
+                fst_str = to_string(itermap->first);
                 std::stringstream ss;
                 ss << (n);
                 names_list += ss.str();
                 names_list.append(".  ");
                 names_list.append(itermap->second);
                 names_list.append(":  ");
-                names_list.append(itermap->first);
+                names_list.append(fst_str);
                 names_list.append("\n");
                 n++;
             }

@@ -6,12 +6,14 @@
 #ifndef BIKES_VARS_H
 #define BIKES_VARS_H
 
+#include <soci/soci.h>
 #include <SDL_ttf.h>
-#include <string>
 #include "dbconnection.h"
 #include "constants.h"
 #include "coordinates.h"
+#include <string>
 
+soci::session* sql;
 StorageData* store_data = NULL;
 
 SDL_Window* screen = NULL;
