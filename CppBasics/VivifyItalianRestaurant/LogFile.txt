@@ -1,0 +1,7 @@
+Order:    date 16/9/2020  11:16:1  table 1
+Order:    date 16/9/2020  11:16:1  table 2
+Order:    date 16/9/2020  11:16:1  table 3
+Receipt:  date 16/9/2020  11:16:1  table 1, payment 2256RSD
+Receipt:  date 16/9/2020  11:16:1  table 3, payment 3426RSD
+Order:    date 16/9/2020  11:16:1  table 2
+Receipt:  date 16/9/2020  11:16:1  table 2, payment 1631RSD

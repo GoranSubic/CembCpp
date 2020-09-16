@@ -1,0 +1,64 @@
+Uputstvo :
+Zadatak može biti pisan u nekom od sledecih programskih jezika: PHP, Javascript, Python,
+Java, Ruby, C# i očekuje se da bude urađen uz poštovanje osnovnih principa objektno
+orijentisanog programiranja.
+Cilj zadatka je pre svega da se pokaže dobro poznavanje OOP principa, a poželjno je
+korišćenje arhitekturalnih i dizajn paterna. Nije esencijalno da program radi. Ponavljamo da
+je maksimalno vreme izrade 3h. Kandidat moze da preda zadatak i nakon 1h ako smatra da
+je prikazao dovoljno znanja. Nakon 3h rada poslati zadatak i ako nije dovršen. Zadatak
+treba realizovati bez dodatnih pitanja.
+______________________________________________________________________________________________
+Napomene :
+● Ne treba pisati bazu podataka
+● Ne treba pisati HTML/CSS kod
+● Akcenat je na OOP programiranju
+● Ukoliko je u odabranom jeziku moguće, potrebno je na odgovarajućim mestima
+implementirati:
+○ Nasleđivanje
+○ Singleton pattern
+■ Opciono iskoristiti neke druge dizajn paterne npr. Factory method,
+Decorator
+○ Polimorfizam
+○ Exception handling
+Zadatak :
+Simulirati sistem za rukovođenje porudžbinama italijanskog restorana.
+Restoran pravi dva osnovna tipa hrane - pizza i pasta, i tri vrste pića - gazirani sokovi,
+negazirani sokovi i voda. Svaki obrok i piće ima naziv i cenu, dok piće ima i zapreminu. Na
+obrok se mogu dodati prilozi. Svaki prilog ima naziv i svoju cenu. Ukupna cena obroka je
+inicijalna cena + cena svakog od priloga. Restoran poseduje svoje stolove koji su
+numerisani rednim brojevima. Za svaku porudžbinu se beleži broj stola i sve poručene
+stavke (obroci, pića i prilozi).
+Pri kreiranju obroka (pasta ili pizza), kreira se i cena koja je random broj između 300
+i 600.
+Pri kreiranju pića, kreira se i cena koja je random broj između 150 i 500.
+Pri kreiranju priloga, kreira se i cena koja je random broj između 20 i 100.
+Za svaku porudžbinu se izdaje racun sa spiskom svake poručene stavke, brojem
+stola i ukupnom cenom.
+Jedan sto moze da ima više porudžbina, ali ne sme da poruči ponovo bez da se
+prethodna porudžbina ne naplati (dok se ne kreira račun). Ukoliko jedan sto poruči ponovo
+bez naplate prethodne porudžbine, baciti izuzetak uz propratnu poruku “Nije moguće izdati
+novu porudžbinu jer prethodna nije plaćena.
+Kreiranje porudžbina i izdavanje računa je potrebno logovati u fajl ili konzolu, u formatu:
+Porudžbina: datum 20/05/2019 11:20 sto broj 3
+Račun: datum 20/05/2019 12:30 sto broj 3, naplata 1340rsd
+Simulirati rad ovog sistema na sledeći način:
+1) Kreirati 4 stola numerisana brojevima od 1 do 4.
+2) Kreirati 4 različite pizze, 5 pasti, 3 različita pića i 5 priloga. (imena generisati).
+3) Kreirati tri porudžbine za prethodno kreirane stavke (ugledati se ili iskoristiti primer
+ispod):
+a) Sto broj 1
+i) Pizza Capricciosa + kecap + origano,
+ii) Pasta Italiana + extra cheese,
+iii) 2 x Coca cola 0.5,
+b) Sto broj 2
+i) Pizza Siciliana,
+ii) Pasta Carbonara,
+iii) negazirani sok 0.25
+c) Sto broj 3
+i) 3 x Pizza Capricciosa + 2x kecap
+ii) Gazirani sok 0.3, negazirani sok 0.5, čaša vode
+4) Naplatiti prvu i treću porudžbinu.
+5) Pokušati poručivanje Pizza Capricciosa za sto broj 2 (očekuje se da se baci izuzetak).
+6) Naplatiti drugu porudžbinu
+7) Pokušati poručivanje Pizza Capricciosa za sto broj 2 (očekuje se uspešno kreiranje
+porudžbine bez izuzetka).
