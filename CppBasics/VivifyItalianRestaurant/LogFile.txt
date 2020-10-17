@@ -1,9 +1,9 @@
-Order:    date 15/10/2020  20:58:27  table 1
-Order:    date 15/10/2020  20:58:27  table 2
-Order:    date 15/10/2020  20:58:27  table 3
-Receipt:  date 15/10/2020  20:58:27  table 1, payment 3491RSD
-Receipt:  date 15/10/2020  20:58:27  table 3, payment 2725RSD
-Order:    date 15/10/2020  20:58:27  table 2
-Failed Order: date 15/10/2020  20:58:27 
+Order:   17/10/2020 13:27:18:	 table 1
+Order:   17/10/2020 13:27:18:	 table 2
+Order:   17/10/2020 13:27:18:	 table 3
+Receipt: 17/10/2020 13:27:18:	 table 1, payment 2652RSD
+Receipt: 17/10/2020 13:27:18:	 table 3, payment 2067RSD
+Order:   17/10/2020 13:27:18:	 table 2
+Failed Order:17/10/2020 13:27:18:	
 Can't make an order, table 2 already has unpaid order!
-Receipt:  date 15/10/2020  20:58:27  table 2, payment 1703RSD
+Receipt: 17/10/2020 13:27:18:	 table 2, payment 1293RSD

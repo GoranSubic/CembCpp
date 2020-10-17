@@ -78,7 +78,6 @@ int main()
     std::vector<Food*> vPizza3;
     vPizza3.push_back(pizzaCapricciosaX32xKetchup);
     std::vector<Food*> vPasta3;
-    //vPasta3.push_back(pasta3);
     std::vector<Drink*> vDrinks3;
     vDrinks3.push_back(drink5);
     vDrinks3.push_back(drink2);

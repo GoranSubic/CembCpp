@@ -17,7 +17,7 @@ class ItalianRestoran {
 public:
     ~ItalianRestoran();
     static ItalianRestoran* getRestoran();
-    void setDateTimeLog(std::string, std::string);
+    void setDateTimeLog(const std::string, const std::string);
     void printBill(Order*);
 };
 

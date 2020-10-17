@@ -3,6 +3,7 @@
 #include "Item.h"
 #include "Order.h"
 #include "Table.h"
+#include "Utilities.h"
 
 #include <ctime>
 #include <string>
@@ -16,29 +17,19 @@ ItalianRestoran::ItalianRestoran() {
 
 ItalianRestoran::~ItalianRestoran()
 {
-    //std::cout << "Called ~ItalianRestoran()" << std::endl;
 }
 
 ItalianRestoran* ItalianRestoran::getRestoran() {
     if (!restoran)
-        //std::unique_ptr<ItalianRestoran> restoran(new ItalianRestoran);
         restoran = new ItalianRestoran;
     return restoran;
 }
 
-void ItalianRestoran::setDateTimeLog(std::string txt1, std::string txt2)
+void ItalianRestoran::setDateTimeLog(const std::string txt1, const std::string txt2)
 {
-    // current date/time based on current system
-    time_t now = time(0);
-    tm* ltm = localtime(&now);
-    std::string Y = std::to_string(1900 + ltm->tm_year);
-    std::string M = std::to_string(1 + ltm->tm_mon);
-    std::string D = std::to_string(ltm->tm_mday);
-    std::string T = std::to_string(ltm->tm_hour) + ":" + std::to_string(ltm->tm_min) + ":" + std::to_string(ltm->tm_sec);
-
     LogFile.exceptions(std::ofstream::failbit | std::ofstream::badbit);
     try {
-        LogFile << txt1 << " date " << D << "/" << M << "/" << Y << "  " << T << " " << txt2;
+        LogFile << txt1 << Util::CurrentDateTime() << ":\t" << txt2;
     }
     catch (std::ofstream::failure e) {
         std::cout << "setDateTimeLog - Exception opening/reading/closing file\n";
