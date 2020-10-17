@@ -8,23 +8,25 @@ class Item {
 public:
 	//Item();
 	virtual ~Item() = 0;
-	virtual std::string getName() = 0;
-	virtual void setName(std::string n) = 0;
-	virtual double getPrice() = 0;
-	virtual void setPrice(double p) = 0;
+	virtual std::string getName();
+	virtual double getPrice();
+	virtual int getCount();
+protected:
+	std::string name;
+	double price;
+	int count;
 };
 
 class Drink :public Item {
-	std::string name;
-	double price;
 	double volume;
 public:
-	Drink(std::string, double);
+	Drink(std::string, double, int c = 0);
 	~Drink();
+
 	std::string getName();
-	void setName(std::string);
 	double getPrice();
-	void setPrice(double);
+	int getCount();
+
 	double getVolume();
 	void setVolume(double);
 };
@@ -34,75 +36,56 @@ public:
 class Food : public Item {
 public:
 	virtual ~Food() = 0;
+
+	std::string getName();
+	double getPrice();
+	int getCount();
 };
 
-// Concrete Component
-class BaseFood : public Food {
-	std::string name;
-	double price;
+// Concrete Component - Pasta
+class Pasta : public Food {
 public:
-	BaseFood(std::string nm);
-	~BaseFood();
-	std::string getName();
-	void setName(std::string);
-	double getPrice();
-	void setPrice(double);
+	Pasta(std::string nm, int c = 0);
+	~Pasta();
+};
+
+// Concrete Component - Pizza
+class Pizza : public Food {
+public:
+	Pizza(std::string nm, int c = 0);
+	~Pizza();
 };
 
 // Decorator
-class FoodDecorator : public Food {
-	std::string nameDec;
-	double priceDec;
-//protected:
-//	Food* p_Food;
+class Meal : public Food 
+{
+protected:
+	Food* p_Food;
 public:
-	FoodDecorator(std::string);
-	std::string getName()
-	{
-		//return p_Food->getName();
-		return nameDec;
-	};
-	void setName(std::string nm)
-	{
-		//p_Food->setName(nm);
-		nameDec = nm;
-	};
-	double getPrice()
-	{
-		//return p_Food->getPrice();
-		return priceDec;
-	};
-	void setPrice(double pr)
-	{
-		//p_Food->setPrice(pr);
-		priceDec = pr;
-	};
+	Meal();
+	Meal(Food* pFood, int c = 0);
 };
 
 // Concrete Decorator
-class FoodConcreteDecorator : public FoodDecorator
+class AddKetchup : public Meal
 {
-	Food* p_Food;
-	Food* p_Decorator;
 public:
-	FoodConcreteDecorator(Food* baseFood, FoodDecorator* decoratorFood);
-	std::string getName()
-	{
-		return p_Food->getName() + " " + p_Decorator->getName();
-	};
-	void setName(std::string nm)
-	{
-		p_Food->setName(nm);
-	};
-	double getPrice()
-	{
-		return p_Food->getPrice() + p_Decorator->getPrice();
-	};
-	void setPrice(double pr)
-	{
-		p_Food->setPrice(pr);
-	};
+	AddKetchup();
+	AddKetchup(Food* baseFood, int c = 0);
 };
 
+class AddOrigano : public Meal
+{
+public:
+	AddOrigano();
+	AddOrigano(Food* baseFood, int c = 0);
+};
+
+class AddExtraCheese : public Meal
+{
+public:
+	AddExtraCheese();
+	AddExtraCheese(Food* baseFood, int c = 0);
+};
 
 #endif

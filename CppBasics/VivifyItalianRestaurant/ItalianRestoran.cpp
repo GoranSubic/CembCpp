@@ -14,8 +14,14 @@ ItalianRestoran::ItalianRestoran() {
     LogFile.open("LogFile.txt");
 }
 
+ItalianRestoran::~ItalianRestoran()
+{
+    //std::cout << "Called ~ItalianRestoran()" << std::endl;
+}
+
 ItalianRestoran* ItalianRestoran::getRestoran() {
     if (!restoran)
+        //std::unique_ptr<ItalianRestoran> restoran(new ItalianRestoran);
         restoran = new ItalianRestoran;
     return restoran;
 }
@@ -70,6 +76,10 @@ void ItalianRestoran::printBill(Order* order)
     std::cout << ++i << ". ";
     for (itDrinks; itDrinks != d.end(); itDrinks++)
     {
+        if ((*itDrinks)->getCount() > 1)
+        {
+            std::cout << (*itDrinks)->getCount() << "x ";
+        }
         std::cout << (*itDrinks)->getName() << " " << (*itDrinks)->getVolume() << " " << (*itDrinks)->getPrice() << "   ";
         sum += (*itDrinks)->getPrice();
     }

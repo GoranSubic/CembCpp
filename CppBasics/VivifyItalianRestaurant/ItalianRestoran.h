@@ -15,6 +15,7 @@ class ItalianRestoran {
     ItalianRestoran();
     std::ofstream LogFile;
 public:
+    ~ItalianRestoran();
     static ItalianRestoran* getRestoran();
     void setDateTimeLog(std::string, std::string);
     void printBill(Order*);

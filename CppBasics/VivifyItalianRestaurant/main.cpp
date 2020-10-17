@@ -11,7 +11,8 @@ int main()
 {
     std::cout << "Italian Restoran Project!\n";
 
-    ItalianRestoran* ir = ItalianRestoran::getRestoran();
+    std::unique_ptr<ItalianRestoran> ir(ItalianRestoran::getRestoran());
+    //ItalianRestoran* ir = ItalianRestoran::getRestoran();
 
     //1) Kreirati 4 stola numerisana brojevima od 1 do 4.
     std::vector<Table*> tables;
@@ -19,59 +20,55 @@ int main()
         tables.push_back(new Table());
 
     //2) Kreirati 4 razlicite pizze, 5 pasti, 3 razlicita pica i 5 priloga. (imena generisati).
-    BaseFood* pizza1 = new BaseFood("Pizza Capricciosa");
-    //std::cout << pizza1->getName() << " - " << pizza1->getPrice() << std::endl;
-    BaseFood* pizza2 = new BaseFood("Pizza Siciliana");
-    BaseFood* pizza3 = new BaseFood("Pizza Adriana");
-    BaseFood* pizza4 = new BaseFood("Pizza Mediterana");
+    Pizza* pizzaCapricciosa = new Pizza("Capricciosa");
+    Pizza* pizzaSiciliana = new Pizza("Siciliana");
+    Pizza* pizzaAdriana = new Pizza("Adriana");
+    Pizza* pizzaMediterana = new Pizza("Mediterana");
+    Pizza* pizzaCapricciosaX3 = new Pizza("Capricciosa", 3);
 
     //2) Kreirati 5 pasti
-    BaseFood* pasta1 = new BaseFood("Pasta Italiana");
-    BaseFood* pasta2 = new BaseFood("Pasta Carbonara");
-    BaseFood* pasta3 = new BaseFood("Pasta 3");
-    BaseFood* pasta4 = new BaseFood("Pasta 4");
-    BaseFood* pasta5 = new BaseFood("Pasta 5");
+    Pasta* pastaItaliana = new Pasta("Italiana");
+    Pasta* pastaCarbonara = new Pasta("Carbonara");
+    Pasta* pasta3 = new Pasta("3");
+    Pasta* pasta4 = new Pasta("4");
+    Pasta* pasta5 = new Pasta("5");
 
     //5 priloga
-    FoodDecorator* addition1 = new FoodDecorator("ketchup");
-    //std::cout << "Decorator 1: " << addition1->getName() << " - " << addition1->getPrice() << std::endl;
-    FoodDecorator* addition2 = new FoodDecorator("origano");
-    FoodDecorator* addition3 = new FoodDecorator("biber");
-    FoodDecorator* addition4 = new FoodDecorator("masline");
-    FoodDecorator* addition5 = new FoodDecorator("extra cheese");
+    Food* ketchup = new AddKetchup();
+    Food* origano = new AddOrigano();
 
-    FoodConcreteDecorator* pizzaWithAdd1 = new FoodConcreteDecorator(pizza1, addition5);
-    //std::cout << "Decorator 1: " << pizzaWithAdd1->getName() << " - " << pizzaWithAdd1->getPrice() << std::endl;
-    FoodConcreteDecorator* pizzaWithAdd2 = new FoodConcreteDecorator(pizzaWithAdd1, addition2);
-    FoodConcreteDecorator* pizzaWithAdd3 = new FoodConcreteDecorator(pizza1, addition1);
-    FoodConcreteDecorator* pizzaWithAdd32 = new FoodConcreteDecorator(pizzaWithAdd3, addition1);
+    Food* pizzaCapricciosaKetchup = new AddKetchup(pizzaCapricciosa);
+    Food* pizzaCapricciosaKetchupOrigano = new AddOrigano(pizzaCapricciosaKetchup);
+    Food* pizzaCapricciosa2xKetchup = new AddKetchup(pizzaCapricciosa, 2);
+    Food* pizzaCapricciosaX32xKetchup = new AddKetchup(pizzaCapricciosaX3, 2);
 
-    FoodConcreteDecorator* pastaWithAdd1 = new FoodConcreteDecorator(pasta1, addition1);
+    Food* pastaItaliExtraCheese = new AddExtraCheese(pastaItaliana);
+
 
     //3 razlicita pica
-    Drink* drink1 = new Drink("Water", 0.25);
+    Drink* drink1 = new Drink("Water", 0.25, 1);
     Drink* drink2 = new Drink("Mineral Water", 0.3);
-    Drink* drink3 = new Drink("Coca Cola", 0.5);
+    Drink* drink3 = new Drink("Coca Cola", 0.5, 2);
+    Drink* drink4 = new Drink("Juice", 0.25);
+    Drink* drink5 = new Drink("Coca Cola", 0.5);
     
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 1
     std::vector<Food*> vPizza1;
-    vPizza1.push_back(pizzaWithAdd2);
+    vPizza1.push_back(pizzaCapricciosaKetchupOrigano);
     std::vector<Food*> vPasta1;
-    vPasta1.push_back(pastaWithAdd1);
+    vPasta1.push_back(pastaItaliExtraCheese);
     std::vector<Drink*> vDrinks1;
-    vDrinks1.push_back(drink3);
-    vDrinks1.push_back(drink3);
+    vDrinks1.push_back(drink4);
     Order* order1 = new Order(vDrinks1, vPizza1, vPasta1, 1);
     //a) Sto broj 1
     tables[0]->setOrder(order1);
 
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 2
     std::vector<Food*> vPizza2;
-    vPizza2.push_back(pizzaWithAdd2);
+    vPizza2.push_back(pizzaSiciliana);
     std::vector<Food*> vPasta2;
-    //vPasta2.push_back(pasta2);
+    vPasta2.push_back(pastaCarbonara);
     std::vector<Drink*> vDrinks2;
-    vDrinks2.push_back(drink3);
     vDrinks2.push_back(drink3);
     Order* order2 = new Order(vDrinks2, vPizza2, vPasta2, 2);
     //b) Sto broj 2
@@ -79,15 +76,13 @@ int main()
 
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 3
     std::vector<Food*> vPizza3;
-    vPizza3.push_back(pizzaWithAdd3);
-    vPizza3.push_back(pizzaWithAdd32);
-    vPizza3.push_back(pizzaWithAdd32);
+    vPizza3.push_back(pizzaCapricciosaX32xKetchup);
     std::vector<Food*> vPasta3;
     //vPasta3.push_back(pasta3);
     std::vector<Drink*> vDrinks3;
-    vDrinks3.push_back(drink3);
-    vDrinks3.push_back(drink1);
+    vDrinks3.push_back(drink5);
     vDrinks3.push_back(drink2);
+    vDrinks3.push_back(drink1);
     Order* order3 = new Order(vDrinks3, vPizza3, vPasta3, 3);
     //c) Sto broj 3
     tables[2]->setOrder(order3);
@@ -102,9 +97,8 @@ int main()
     //5) Pokusati porucivanje Pizza Capricciosa za sto broj 2 (ocekuje se da se baci izuzetak).
     //b) Sto broj 2
     std::vector<Food*> vPizza4;
-    vPizza4.push_back(pizza1);
+    vPizza4.push_back(pizzaCapricciosa);
     std::vector<Food*> vPasta4;
-    //vPasta4.push_back(pasta4);
     std::vector<Drink*> vDrinks4;
     Order* order4 = new Order(vDrinks4, vPizza4, vPasta4, 2);
     tables[1]->setOrder(order4);
@@ -118,5 +112,6 @@ int main()
     tables[1]->setOrder(order4);
 
     
-    delete ir;
+    //Don't have to delete ir becouse of unique_ptr
+    //delete ir;
 }
