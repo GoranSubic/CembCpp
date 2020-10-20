@@ -25,7 +25,7 @@ Order::Order(std::vector<Drink*> v, std::vector<Food*> p, std::vector<Food*> t, 
 
 	std::stringstream tt;
 	tt << " table " << tableId << std::endl;
-	ItalianRestoran* cs = ItalianRestoran::getRestoran();
+	std::shared_ptr<ItalianRestoran> cs = ItalianRestoran::getRestoran();
 	cs->setDateTimeLog(ss.str(), tt.str());
 }
 

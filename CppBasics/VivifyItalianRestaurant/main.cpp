@@ -11,7 +11,7 @@ int main()
 {
     std::cout << "Italian Restoran Project!\n";
 
-    std::unique_ptr<ItalianRestoran> ir(ItalianRestoran::getRestoran());
+    std::shared_ptr<ItalianRestoran> ir(ItalianRestoran::getRestoran());
     //ItalianRestoran* ir = ItalianRestoran::getRestoran();
 
     //1) Kreirati 4 stola numerisana brojevima od 1 do 4.
@@ -59,7 +59,7 @@ int main()
     vPasta1.push_back(pastaItaliExtraCheese);
     std::vector<Drink*> vDrinks1;
     vDrinks1.push_back(drink4);
-    Order* order1 = new Order(vDrinks1, vPizza1, vPasta1, 1);
+    std::shared_ptr<Order> order1 = std::make_shared<Order>(vDrinks1, vPizza1, vPasta1, 1);
     //a) Sto broj 1
     tables[0]->setOrder(order1);
 
@@ -70,7 +70,7 @@ int main()
     vPasta2.push_back(pastaCarbonara);
     std::vector<Drink*> vDrinks2;
     vDrinks2.push_back(drink3);
-    Order* order2 = new Order(vDrinks2, vPizza2, vPasta2, 2);
+    std::shared_ptr<Order> order2 = std::make_shared<Order>(vDrinks2, vPizza2, vPasta2, 2);
     //b) Sto broj 2
     tables[1]->setOrder(order2);
 
@@ -82,7 +82,7 @@ int main()
     vDrinks3.push_back(drink5);
     vDrinks3.push_back(drink2);
     vDrinks3.push_back(drink1);
-    Order* order3 = new Order(vDrinks3, vPizza3, vPasta3, 3);
+    std::shared_ptr<Order> order3 = std::make_shared<Order>(vDrinks3, vPizza3, vPasta3, 3);
     //c) Sto broj 3
     tables[2]->setOrder(order3);
 
@@ -99,7 +99,8 @@ int main()
     vPizza4.push_back(pizzaCapricciosa);
     std::vector<Food*> vPasta4;
     std::vector<Drink*> vDrinks4;
-    Order* order4 = new Order(vDrinks4, vPizza4, vPasta4, 2);
+    vDrinks4.push_back(drink3);
+    std::shared_ptr<Order> order4 = std::make_shared<Order>(vDrinks4, vPizza4, vPasta4, 2);
     tables[1]->setOrder(order4);
 
     //6) Naplatiti drugu porudzbinu
@@ -108,7 +109,9 @@ int main()
 
     //7) Pokusati porucivanje Pizza Capricciosa za sto broj 2 (ocekuje se uspešno kreiranje
     //    porudzbine bez izuzetka).
+    order4 = std::make_shared<Order>(vDrinks4, vPizza4, vPasta4, 2);
     tables[1]->setOrder(order4);
+    ir->printBill(order4);
 
     
     //Don't have to delete ir becouse of unique_ptr

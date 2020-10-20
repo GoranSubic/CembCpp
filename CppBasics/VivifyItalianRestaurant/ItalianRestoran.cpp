@@ -19,10 +19,13 @@ ItalianRestoran::~ItalianRestoran()
 {
 }
 
-ItalianRestoran* ItalianRestoran::getRestoran() {
-    if (!restoran)
-        restoran = new ItalianRestoran;
-    return restoran;
+std::shared_ptr<ItalianRestoran> ItalianRestoran::getRestoran   () {
+    std::shared_ptr<ItalianRestoran> instance = restoran.lock();
+    if (!instance) {
+        instance.reset(new ItalianRestoran);
+        restoran = instance;
+    }
+    return instance;
 }
 
 void ItalianRestoran::setDateTimeLog(const std::string txt1, const std::string txt2)
@@ -36,7 +39,7 @@ void ItalianRestoran::setDateTimeLog(const std::string txt1, const std::string t
     }
 }
 
-void ItalianRestoran::printBill(Order* order)
+void ItalianRestoran::printBill(std::shared_ptr<Order> const& order)
 {
     double sum = 0;
     std::vector<Food*> p = order->getPizzas();
@@ -75,21 +78,16 @@ void ItalianRestoran::printBill(Order* order)
         sum += (*itDrinks)->getPrice();
     }
     std::cout << std::endl;
-
     std::cout << "Sum is: " << sum << std::endl;
-
 
     std::stringstream ss;
     ss << "Receipt: ";
     std::stringstream tt;
     tt << " table " << order->getTableId() << ", payment " << sum << "RSD" << std::endl;
-    ItalianRestoran* cs = ItalianRestoran::getRestoran();
+    std::shared_ptr<ItalianRestoran> cs = ItalianRestoran::getRestoran();
     cs->setDateTimeLog(ss.str(), tt.str());
-
-
-    delete order;
 
 }
 
 //Initialize pointer to zero so that it can be initialized in first call to getInstance
-ItalianRestoran* ItalianRestoran::restoran = 0;
+std::weak_ptr<ItalianRestoran> ItalianRestoran::restoran;

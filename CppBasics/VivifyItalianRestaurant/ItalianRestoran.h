@@ -9,16 +9,16 @@ class Order;
 class Table;
 
 class ItalianRestoran {
-    static ItalianRestoran* restoran;
+    static std::weak_ptr<ItalianRestoran> restoran;
 
     // Private constructor so that no objects can be created.
     ItalianRestoran();
     std::ofstream LogFile;
 public:
     ~ItalianRestoran();
-    static ItalianRestoran* getRestoran();
+    static std::shared_ptr<ItalianRestoran> getRestoran();
     void setDateTimeLog(const std::string, const std::string);
-    void printBill(Order*);
+    void printBill(std::shared_ptr<Order> const&);
 };
 
 #endif

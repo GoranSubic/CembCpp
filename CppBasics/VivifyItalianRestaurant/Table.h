@@ -1,18 +1,20 @@
 #ifndef TABLE_H
 #define TABLE_H
 
+#include <memory>
+
 class Order;
 
 class Table {
-	Order* order;
+	std::shared_ptr<Order> order;
 	int id;
 	static int unId;
 public:
 	Table();
-	Table(Order*);
+	Table(std::shared_ptr<Order> const&);
 	int getId();
-	Order* getOrder();
-	void setOrder(Order*);
+	std::shared_ptr<Order> getOrder();
+	void setOrder(std::shared_ptr<Order> const&);
 	void deleteOrder();
 };
 

@@ -11,7 +11,7 @@ Table::Table()
 	//order = nullptr;
 }
 
-Table::Table(Order* o)
+Table::Table(std::shared_ptr<Order> const& o)
 {
 	if (!this->order)
 	{
@@ -27,12 +27,12 @@ int Table::getId()
 	return id;
 }
 
-Order* Table::getOrder()
+std::shared_ptr<Order> Table::getOrder()
 {
 	return order;
 }
 
-void Table::setOrder(Order* o)
+void Table::setOrder(std::shared_ptr<Order> const& o)
 {
 	try {
 		if (!this->order)
@@ -45,7 +45,7 @@ void Table::setOrder(Order* o)
 		std::stringstream tt;
 		tt << "\nCan't make an order, table " << this->id << " already has unpaid order!" << std::endl;
 
-		ItalianRestoran* cs = ItalianRestoran::getRestoran();
+		std::shared_ptr<ItalianRestoran> cs = ItalianRestoran::getRestoran();
 		cs->setDateTimeLog(ss.str(), tt.str());
 
 		std::cout << tt.str();
@@ -55,5 +55,6 @@ void Table::setOrder(Order* o)
 void Table::deleteOrder()
 {
 	//delete order;
-	order = nullptr;
+	//order = nullptr;
+	order.reset();
 }
