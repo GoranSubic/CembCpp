@@ -12,7 +12,7 @@ Order::~Order()
 	pizzas.clear();
 }
 
-Order::Order(std::vector<Drink*> v, std::vector<Food*> p, std::vector<Food*> t, int tblId)
+Order::Order(std::vector<std::shared_ptr<Drink>> v, std::vector<std::shared_ptr<Food>> p, std::vector<std::shared_ptr<Food>> t, int tblId)
 {
 	id = ++unOrderId;
 	tableId = tblId;
@@ -39,22 +39,22 @@ void Order::setTableId(int tid)
 	tableId = tid;
 }
 
-void Order::setDrinks(Drink* d)
+void Order::setDrinks(std::shared_ptr<Drink> d)
 {
 	drinks.push_back(d);
 }
 
-std::vector<Drink*> Order::getDrinks()
+std::vector<std::shared_ptr<Drink>> Order::getDrinks()
 {
 	return drinks;
 }
 
-std::vector<Food*> Order::getPizzas()
+std::vector<std::shared_ptr<Food>> Order::getPizzas()
 {
 	return pizzas;
 }
 
-std::vector<Food*> Order::getPastas()
+std::vector<std::shared_ptr<Food>> Order::getPastas()
 {
 	return pastas;
 }

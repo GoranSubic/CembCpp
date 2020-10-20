@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <memory>
 
 class Drink;
 class Food;
@@ -11,21 +12,21 @@ class Table;
 class Order {
 	static int unOrderId;
 	int id;
-	std::vector<Drink*> drinks;
-	std::vector<Food*> pizzas;
-	std::vector<Food*> pastas;
+	std::vector<std::shared_ptr<Drink>> drinks;
+	std::vector<std::shared_ptr<Food>> pizzas;
+	std::vector<std::shared_ptr<Food>> pastas;
 	int tableId;
 public:
-	Order(std::vector<Drink*>, std::vector<Food*>, std::vector<Food*>, int tableId);
+	Order(std::vector<std::shared_ptr<Drink>>, std::vector<std::shared_ptr<Food>>, std::vector<std::shared_ptr<Food>>, int tableId);
 	~Order();
 	void setId();
 	int getId();
 	int getTableId();
 	void setTableId(int);
-	void setDrinks(Drink*);
-	std::vector<Drink*> getDrinks();
-	std::vector<Food*> getPizzas();
-	std::vector<Food*> getPastas();
+	void setDrinks(std::shared_ptr<Drink>);
+	std::vector<std::shared_ptr<Drink>> getDrinks();
+	std::vector<std::shared_ptr<Food>> getPizzas();
+	std::vector<std::shared_ptr<Food>> getPastas();
 };
 
 #endif

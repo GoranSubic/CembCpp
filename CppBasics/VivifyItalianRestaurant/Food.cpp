@@ -79,7 +79,7 @@ Meal::Meal() : p_Food(NULL)
 	count = 0;
 }
 
-Meal::Meal(Food* pFood, int c) : p_Food(pFood)
+Meal::Meal(std::shared_ptr<Food> pFood, int c) : p_Food(pFood)
 {
 	name = p_Food->getName();
 	price = p_Food->getPrice();
@@ -96,7 +96,7 @@ AddKetchup::AddKetchup()
 	price = float(fr);
 }
 
-AddKetchup::AddKetchup(Food* baseFood,int c) : Meal(baseFood, c)
+AddKetchup::AddKetchup(std::shared_ptr<Food> baseFood,int c) : Meal(baseFood, c)
 {
 	std::stringstream fullName;
 	if (this->getCount() > 1) 
@@ -124,7 +124,7 @@ AddOrigano::AddOrigano()
 	price = float(fr);
 }
 
-AddOrigano::AddOrigano(Food* baseFood, int c) : Meal(baseFood, c)
+AddOrigano::AddOrigano(std::shared_ptr<Food> baseFood, int c) : Meal(baseFood, c)
 {
 	std::stringstream fullName;
 	if (this->getCount() > 1)
@@ -152,7 +152,7 @@ AddExtraCheese::AddExtraCheese()
 	price = float(fr);
 }
 
-AddExtraCheese::AddExtraCheese(Food* baseFood, int c) : Meal(baseFood, c)
+AddExtraCheese::AddExtraCheese(std::shared_ptr<Food> baseFood, int c) : Meal(baseFood, c)
 {
 	std::stringstream fullName;
 	if (this->getCount() > 1)

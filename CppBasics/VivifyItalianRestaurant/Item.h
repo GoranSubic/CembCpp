@@ -2,6 +2,7 @@
 #define ITEM_H
 
 #include <string>
+#include <memory>
 
 //Item
 class Item {
@@ -60,10 +61,10 @@ public:
 class Meal : public Food 
 {
 protected:
-	Food* p_Food;
+	std::shared_ptr<Food> p_Food;
 public:
 	Meal();
-	Meal(Food* pFood, int c = 0);
+	Meal(std::shared_ptr<Food> pFood, int c = 0);
 };
 
 // Concrete Decorator
@@ -71,21 +72,21 @@ class AddKetchup : public Meal
 {
 public:
 	AddKetchup();
-	AddKetchup(Food* baseFood, int c = 0);
+	AddKetchup(std::shared_ptr<Food> baseFood, int c = 0);
 };
 
 class AddOrigano : public Meal
 {
 public:
 	AddOrigano();
-	AddOrigano(Food* baseFood, int c = 0);
+	AddOrigano(std::shared_ptr<Food> baseFood, int c = 0);
 };
 
 class AddExtraCheese : public Meal
 {
 public:
 	AddExtraCheese();
-	AddExtraCheese(Food* baseFood, int c = 0);
+	AddExtraCheese(std::shared_ptr<Food> baseFood, int c = 0);
 };
 
 #endif

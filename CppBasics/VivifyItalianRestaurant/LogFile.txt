@@ -1,11 +1,11 @@
-Order:   20/10/2020 15:01:30:	 table 1
-Order:   20/10/2020 15:01:30:	 table 2
-Order:   20/10/2020 15:01:30:	 table 3
-Receipt: 20/10/2020 15:01:30:	 table 1, payment 3175RSD
-Receipt: 20/10/2020 15:01:30:	 table 3, payment 2089RSD
-Order:   20/10/2020 15:01:30:	 table 2
-Failed Order:20/10/2020 15:01:30:	
+Order:   20/10/2020 17:45:42:	 table 1
+Order:   20/10/2020 17:45:42:	 table 2
+Order:   20/10/2020 17:45:42:	 table 3
+Receipt: 20/10/2020 17:45:42:	 table 1, payment 3049RSD
+Receipt: 20/10/2020 17:45:42:	 table 3, payment 1789RSD
+Order:   20/10/2020 17:45:42:	 table 2
+Failed Order:20/10/2020 17:45:42:	
 Can't make an order, table 2 already has unpaid order!
-Receipt: 20/10/2020 15:01:31:	 table 2, payment 1459RSD
-Order:   20/10/2020 15:01:31:	 table 2
-Receipt: 20/10/2020 15:01:31:	 table 2, payment 887RSD
+Receipt: 20/10/2020 17:45:42:	 table 2, payment 1351RSD
+Order:   20/10/2020 17:45:42:	 table 2
+Receipt: 20/10/2020 17:45:42:	 table 2, payment 785RSD

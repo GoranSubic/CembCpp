@@ -42,13 +42,13 @@ void ItalianRestoran::setDateTimeLog(const std::string txt1, const std::string t
 void ItalianRestoran::printBill(std::shared_ptr<Order> const& order)
 {
     double sum = 0;
-    std::vector<Food*> p = order->getPizzas();
-    std::vector<Food*> t = order->getPastas();
-    std::vector<Drink*> d = order->getDrinks();
+    std::vector<std::shared_ptr<Food>> p = order->getPizzas();
+    std::vector<std::shared_ptr<Food>> t = order->getPastas();
+    std::vector<std::shared_ptr<Drink>> d = order->getDrinks();
 
-    std::vector<Food*>::iterator itPizzas = p.begin();
-    std::vector<Food*>::iterator itPastas = t.begin();
-    std::vector<Drink*>::iterator itDrinks = d.begin();
+    std::vector<std::shared_ptr<Food>>::iterator itPizzas = p.begin();
+    std::vector<std::shared_ptr<Food>>::iterator itPastas = t.begin();
+    std::vector<std::shared_ptr<Drink>>::iterator itDrinks = d.begin();
 
     int i = 0;
     std::cout << "\n\nTable " << order->getTableId() << " payment" << std::endl;

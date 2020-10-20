@@ -15,70 +15,70 @@ int main()
     //ItalianRestoran* ir = ItalianRestoran::getRestoran();
 
     //1) Kreirati 4 stola numerisana brojevima od 1 do 4.
-    std::vector<Table*> tables;
+    std::vector<std::unique_ptr<Table>> tables;
     for (int i = 0; i < 4; i++)
-        tables.push_back(new Table());
+        tables.push_back(std::make_unique<Table>(Table()));
 
     //2) Kreirati 4 razlicite pizze, 5 pasti, 3 razlicita pica i 5 priloga. (imena generisati).
-    Pizza* pizzaCapricciosa = new Pizza("Capricciosa");
-    Pizza* pizzaSiciliana = new Pizza("Siciliana");
-    Pizza* pizzaAdriana = new Pizza("Adriana");
-    Pizza* pizzaMediterana = new Pizza("Mediterana");
-    Pizza* pizzaCapricciosaX3 = new Pizza("Capricciosa", 3);
+    std::shared_ptr<Pizza> pizzaCapricciosa = std::make_shared<Pizza>(Pizza("Capricciosa"));
+    std::shared_ptr<Pizza> pizzaSiciliana = std::make_shared<Pizza>(Pizza("Siciliana"));
+    std::shared_ptr<Pizza> pizzaAdriana = std::make_shared<Pizza>(Pizza("Adriana"));
+    std::shared_ptr<Pizza> pizzaMediterana = std::make_shared<Pizza>(Pizza("Mediterana"));
+    std::shared_ptr<Pizza> pizzaCapricciosaX3 = std::make_shared<Pizza>(Pizza("Capricciosa", 3));
 
     //2) Kreirati 5 pasti
-    Pasta* pastaItaliana = new Pasta("Italiana");
-    Pasta* pastaCarbonara = new Pasta("Carbonara");
-    Pasta* pasta3 = new Pasta("3");
-    Pasta* pasta4 = new Pasta("4");
-    Pasta* pasta5 = new Pasta("5");
+    std::shared_ptr<Pasta> pastaItaliana = std::make_shared<Pasta>(Pasta("Italiana"));
+    std::shared_ptr<Pasta> pastaCarbonara = std::make_shared<Pasta>(Pasta("Carbonara"));
+    std::shared_ptr<Pasta> pasta3 = std::make_shared<Pasta>(Pasta("3"));
+    std::shared_ptr<Pasta> pasta4 = std::make_shared<Pasta>(Pasta("4"));
+    std::shared_ptr<Pasta> pasta5 = std::make_shared<Pasta>(Pasta("5"));
 
     //5 priloga
-    Food* ketchup = new AddKetchup();
-    Food* origano = new AddOrigano();
+    std::unique_ptr<Food> ketchup = std::make_unique<AddKetchup>(AddKetchup());
+    std::unique_ptr<Food> origano = std::make_unique<AddOrigano>(AddOrigano());
 
-    Food* pizzaCapricciosaKetchup = new AddKetchup(pizzaCapricciosa);
-    Food* pizzaCapricciosaKetchupOrigano = new AddOrigano(pizzaCapricciosaKetchup);
-    Food* pizzaCapricciosa2xKetchup = new AddKetchup(pizzaCapricciosa, 2);
-    Food* pizzaCapricciosaX32xKetchup = new AddKetchup(pizzaCapricciosaX3, 2);
+    std::shared_ptr<Food> pizzaCapricciosaKetchup = std::make_shared<AddKetchup>(pizzaCapricciosa);
+    std::shared_ptr<Food> pizzaCapricciosaKetchupOrigano = std::make_shared<AddOrigano>(pizzaCapricciosaKetchup);
+    std::shared_ptr<Food> pizzaCapricciosa2xKetchup = std::make_shared<AddKetchup>(pizzaCapricciosa, 2);
+    std::shared_ptr<Food> pizzaCapricciosaX32xKetchup = std::make_shared<AddKetchup>(pizzaCapricciosaX3, 2);
 
-    Food* pastaItaliExtraCheese = new AddExtraCheese(pastaItaliana);
+    std::shared_ptr<Food> pastaItaliExtraCheese = std::make_shared<AddExtraCheese>(pastaItaliana);
 
 
     //3 razlicita pica
-    Drink* drink1 = new Drink("Water", 0.25, 1);
-    Drink* drink2 = new Drink("Mineral Water", 0.3);
-    Drink* drink3 = new Drink("Coca Cola", 0.5, 2);
-    Drink* drink4 = new Drink("Juice", 0.25);
-    Drink* drink5 = new Drink("Coca Cola", 0.5);
+    std::shared_ptr<Drink> drink1 = std::make_shared<Drink>("Water", 0.25, 1);
+    std::shared_ptr<Drink> drink2 = std::make_shared<Drink>("Mineral Water", 0.3);
+    std::shared_ptr<Drink> drink3 = std::make_shared<Drink>("Coca Cola", 0.5, 2);
+    std::shared_ptr<Drink> drink4 = std::make_shared<Drink>("Juice", 0.25);
+    std::shared_ptr<Drink> drink5 = std::make_shared<Drink>("Coca Cola", 0.5);
     
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 1
-    std::vector<Food*> vPizza1;
+    std::vector<std::shared_ptr<Food>> vPizza1;
     vPizza1.push_back(pizzaCapricciosaKetchupOrigano);
-    std::vector<Food*> vPasta1;
+    std::vector<std::shared_ptr<Food>> vPasta1;
     vPasta1.push_back(pastaItaliExtraCheese);
-    std::vector<Drink*> vDrinks1;
+    std::vector<std::shared_ptr<Drink>> vDrinks1;
     vDrinks1.push_back(drink4);
     std::shared_ptr<Order> order1 = std::make_shared<Order>(vDrinks1, vPizza1, vPasta1, 1);
     //a) Sto broj 1
     tables[0]->setOrder(order1);
 
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 2
-    std::vector<Food*> vPizza2;
+    std::vector<std::shared_ptr<Food>> vPizza2;
     vPizza2.push_back(pizzaSiciliana);
-    std::vector<Food*> vPasta2;
+    std::vector<std::shared_ptr<Food>> vPasta2;
     vPasta2.push_back(pastaCarbonara);
-    std::vector<Drink*> vDrinks2;
+    std::vector<std::shared_ptr<Drink>> vDrinks2;
     vDrinks2.push_back(drink3);
     std::shared_ptr<Order> order2 = std::make_shared<Order>(vDrinks2, vPizza2, vPasta2, 2);
     //b) Sto broj 2
     tables[1]->setOrder(order2);
 
     //3) Kreirati tri porudzbine za prethodno kreirane stavke - 3
-    std::vector<Food*> vPizza3;
+    std::vector<std::shared_ptr<Food>> vPizza3;
     vPizza3.push_back(pizzaCapricciosaX32xKetchup);
-    std::vector<Food*> vPasta3;
-    std::vector<Drink*> vDrinks3;
+    std::vector<std::shared_ptr<Food>> vPasta3;
+    std::vector<std::shared_ptr<Drink>> vDrinks3;
     vDrinks3.push_back(drink5);
     vDrinks3.push_back(drink2);
     vDrinks3.push_back(drink1);
@@ -95,10 +95,10 @@ int main()
 
     //5) Pokusati porucivanje Pizza Capricciosa za sto broj 2 (ocekuje se da se baci izuzetak).
     //b) Sto broj 2
-    std::vector<Food*> vPizza4;
+    std::vector<std::shared_ptr<Food>> vPizza4;
     vPizza4.push_back(pizzaCapricciosa);
-    std::vector<Food*> vPasta4;
-    std::vector<Drink*> vDrinks4;
+    std::vector<std::shared_ptr<Food>> vPasta4;
+    std::vector<std::shared_ptr<Drink>> vDrinks4;
     vDrinks4.push_back(drink3);
     std::shared_ptr<Order> order4 = std::make_shared<Order>(vDrinks4, vPizza4, vPasta4, 2);
     tables[1]->setOrder(order4);
